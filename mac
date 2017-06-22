@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Welcome to the thoughtbot laptop script!
+# Welcome to kpassapk's laptop script, using Thoughtbot as a starter!
 # Be prepared to turn your laptop (or desktop, no haters here)
 # into an awesome development machine.
 
@@ -126,8 +126,8 @@ brew "vim"
 brew "zsh"
 
 # Heroku
-brew "heroku-toolbelt"
-brew "parity"
+# brew "heroku-toolbelt"
+# brew "parity"
 
 # GitHub
 brew "hub"
@@ -136,7 +136,7 @@ brew "hub"
 brew "imagemagick"
 
 # Testing
-brew "qt"
+# brew "qt"
 
 # Programming languages
 brew "libyaml" # should come after openssl
