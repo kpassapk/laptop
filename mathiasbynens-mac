@@ -194,7 +194,11 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bo
 sudo systemsetup -settimezone "Europe/Brussels" > /dev/null
 
 # Stop iTunes from responding to the keyboard media keys
-#launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+
+# Increase the number of allowed concurrent file handles.
+# http://docs.ansible.com/ansible/latest/intro_installation.html
+sudo launchctl limit maxfiles unlimited
 
 ###############################################################################
 # Screen                                                                      #
